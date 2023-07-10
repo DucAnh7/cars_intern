@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoXe</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation"> <!-- ? -->
+        <div class="container">   <!--first header-->
+            <div class="sub-header">   <!--dong trong header-->
+                <div>
+                    <a href="index.html"> <!--ChoXe-->
+                        <img src="img2/logo_choxe.png" alt="Chợ Xe">
+                    </a>   <!--Car Audit-->
+                    <a href="#">
+                        <i class="icon-car"> </i> <!--icon-->
+                        Car Audit
+                    </a>
+                    <a href="#">    <!--Thu tuc mua ban-->
+                        <i class="icon-support"></i>
+                        Thủ tục mua bán 
+                    </a>
+                    <a href="tintuc.html"> <!--Tin tuc-->
+                        <i class="icon-news"></i>
+                        Tin tức 
+                    </a>
+                </div> 
+                <div>
+                    <a href="giohang.html">
+                        <i class="cartnew-empty"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="second-header">   <!--second header-->
+                <div class="input_search_wrapper">   
+                    <form id="header_search_form" action="#" method="get" class="form_search">
+                        <div class="control has-icons-left has-icons-right is-clickable" style="width: 865px;">
+                            <input type="text" name="keyword" placeholder="Tìm kiếm trong chợ xe" class="input input_keyword is-small">
+                            <span class="icon is-left">
+                                <i class="icon-search"></i>
+                            </span>
+                            <a href="#" data-toggle="modal" data-target="#modalSearchForm" class="icon is-right is-text">
+                                <i class="icon-preferences"></i>    
+                            </a>
+                        </div>
+                    </form>
+                    <div class="recent_search_wrapper is-hidden">
+                        <div id="empty_history" class="is-hidden">Không có tìm kiếm nào gần đây</div>
+                        <div>
+                            <div class="recent_search_title">Tìm kiếm gần đây</div>
+                            <a id="btn_clear_history" href="#" class="has-text-primary">Xóa Tất Cả</a>
+                            <div class="list_keywords mt-2">
+                                <div class="keyword_item">
+                                    <a href="#" class="keyword">xe 4 chỗ</a>
+                                    <a href="#" class="remove">
+                                        <i class="icon-remove"></i>
+                                    </a>
+                                </div>
+                                <div class="keyword_item">
+                                    <a href="#" class="keyword">ford</a>
+                                    <a href="#" class="remove">
+                                        <i class="icon-remove"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="dangnhap.html" class="avatar_wrapper">  
+                    <img src="img2/dangnhap.png" class="image">
+                    Đăng nhập
+                </a>
+                <a href="dangky.html" class="avatar_wrapper">Đăng ký</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pb-0">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Từ khóa tìm kiếm nhiều nhất</h2>
+                    <div class="popular_keyword">
+                        <a href="#" class="tag">Hyundai Accent</a>
+                        <a href="#" class="tag">Mazda CX-5</a>
+                        <a href="#" class="tag">Xe 7 chỗ dưới 1 tỷ</a>
+                        <a href="#" class="tag">Ford Explorer 2022</a>
+                        <a href="#" class="tag">Bán tải cũ giá rẻ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Tin đăng mới nhất</h2>
+            <!--  -->
+            <div class="mt-2">
+                <div class="columns is-mobile is-multiline list_car">    
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                 <a href="chitiet.html">   <!-- chi tiet sp -->
+                                    <img src="img2/bmw_888tr.webp" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div>
+                                    <a href="chitiet.html" class="car_name ">BMW 3 Series 320I sx 12/2016 đăng ký lần đầu 2017, 1 chủ từ đầu đã sang ra tên em.màu đen nội thất đen</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2016</span>
+                                    <span>Bán tự động</span>
+                                    <span>40.000 km</span>
+                                </div>
+                                <div class="car_price">888 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hồ Chí Minh</span>
+                                    <span class="time_friendly is-converted">1 ngày trước</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/Toyota 118tr.webp" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Toyota Vios 2008 2007, Số sàn, đã đi 200.000 km</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2007</span>
+                                    <span>Số sàn</span>
+                                    <span>200.000 km</span>
+                                </div>
+                                <div class="car_price">118 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hà Nội</span>
+                                    <span class="time_friendly is-converted">20/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/toyata 655tr.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Toyota Veloz Cross Toyota Veloz Cross CVT 2022, Tự động, đã đi 19.000 km</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2022</span>
+                                    <span>Tự động</span>
+                                    <span>19.000 km</span>
+                                </div>
+                                <div class="car_price">655 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hà Nội</span>
+                                    <span class="time_friendly is-converted">20/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/huyndai 365tr.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Hyundai Sonata y20 2010, Tự động, đã đi 120.000 km</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2010</span>
+                                    <span>Tự động</span>
+                                    <span>120.000 km</span>
+                                </div>
+                                <div class="car_price">365 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hưng Yên</span>
+                                    <span class="time_friendly is-converted">19/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/volkswagen 1ty9.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Volkswagen Tiguan Facelift - 2023</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2023</span>
+                                    <span>Tự động</span>
+                                    <span>Xe mới</span>
+                                </div>
+                                <div class="car_price">1 tỷ 999 triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hồ Chí Minh</span>
+                                    <span class="time_friendly is-converted">16/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/huyndai 120tr.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Hyundai Starex 2003, xe 1 chủ dùng từ đầu gia hấp dẫn</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2003</span>
+                                    <span>Số sàn</span>
+                                    <span>18.000 km</span>
+                                </div>
+                                <div class="car_price">120 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hà Nội</span>
+                                    <span class="time_friendly is-converted">15/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/suzuki 609tr.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                                <div><a href="#" class="car_name ">Suzuki Ertiga Hybrid mới 2022- Chỉ 100 triệu lăn bánh</a></div>
+                                <div class="car_item_attribute">
+                                    <span>2022</span>   
+                                    <span>Tự động</span>
+                                    <span>Xe mới</span>
+                                </div>
+                                <div class="car_price">609 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hồ Chí Minh</span>
+                                    <span class="time_friendly is-converted">12/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="column is-3">
+                        <div class="is-3 list_car_item">
+                            <div class="list_car_item_photo">
+                                <a href="#">
+                                    <img src="img2/huyndai 318tr.jpg" class="image">
+                                </a>
+                            </div>
+                            <div class="list_car_item_info">
+                            <div><a href="#" class="car_name ">Hyundai i10  Sedan MT Full 2020, Odo 58.000km, Biển TP.HCM</a></div>
+                            <div class="car_item_attribute">
+                                <span>2020</span>
+                                <span>Số sàn</span>
+                                <span>58.000 km</span>
+                                </div>
+                                <div class="car_price">318 Triệu</div>
+                                <div class="car_item_meta">
+                                    <span>Hồ Chí Minh</span>
+                                    <span class="time_friendly is-converted">12/6/2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="section_footer">
+                <a href="#" class="btn_view_more has_right_arrow">Xem thêm</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card-content pb-0">
+                    <h2><a href="#" class="h1">Salon Ô tô</a></h2>
+                    <div class="columns is-mobile is-multiline list_salon">
+                                <div class="column is-6 list_salon_item">
+                <div class="list_salon_item_photo">
+                    <a href="#">
+                        <img src="img2/ChoxekieuMy.webp" class="image">
+                    </a>
+                </div>
+                <div class="list_salon_item_info">
+                    <div class="salon_name">
+                        <a href="#">Chợ Xe Kiểu Mỹ</a>
+                    </div>
+                    <div class="location">135 Nguyễn trãi</div>
+                    <div class="phone">0911442883</div>
+                </div>
+            </div>
+                <div class="column is-6 list_salon_item">
+                <div class="list_salon_item_photo">
+                    <a href="#">
+                        <img src="img2/Toyota Phu My Hung.webp" class="image">
+                    </a>
+                </div>
+                <div class="list_salon_item_info">
+                    <div class="salon_name">
+                        <a href="#">Toyota Phú Mỹ Hưng</a>
+                    </div>
+                    <div class="location">290 Nguyễn Văn Linh</div>
+                    <div class="phone">0392211086</div>
+                </div>
+            </div>
+            <br>
+            <div class="column is-6 list_salon_item">
+                <div class="list_salon_item_photo">
+                    <a href="#">
+                        <img src="img2/Mitsubishi thu duc.jpg" class="image">
+                    </a>
+                </div>
+                <div class="list_salon_item_info">
+                    <div class="salon_name">
+                        <a href="#">Mitsubishi Thủ Đức</a>
+                    </div>
+                    <div class="location">14 Hoàng Hữu Nam</div>
+                    <div class="phone">0989700015</div>
+                </div>
+            </div>
+            <div class="column is-6 list_salon_item">
+                <div class="list_salon_item_photo">
+                    <a href="#">
+                        <img src="img2/Lexus luot ha noi.webp" class="image">
+                    </a>
+                </div>
+                <div class="list_salon_item_info">
+                    <div class="salon_name">
+                        <a href="#">Lexus Lướt Hà Nội</a>
+                    </div>
+                    <div class="location">Thái Ngọc Lexus Lướt Hà Nội 1C Nguyễn Văn Huyên Nghĩa Đô Cầu Giấy Hà Nội &lt; Hoàng Quốc Việt Rẽ 200m Hướng Công Viên Nghĩa Đô &gt;</div>
+                    <div class="phone">0983999222</div>
+                </div>
+            </div>
+                    </div>
+                    <div class="has-text-centered mb-3">
+                        <a href="#" class="btn_view_more has_right_arrow">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="h1">Bảng giá xe các hãng</h2>
+                    <div class="columns is-mobile is-multiline mt-3">
+                                    <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_toyota.png" class="image" alt="Toyota">
+                        </span>
+                        <span class="brand_name">Toyota</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_huyndai.webp" class="image" alt="Huyndai">
+                        </span>
+                        <span class="brand_name">Hyundai</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_kia.webp" class="image" alt="KIA">
+                        </span>
+                        <span class="brand_name">KIA</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_vinfast.webp" class="image" alt="VinFast">
+                        </span>
+                        <span class="brand_name">VinFast</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_mitsubishi.webp" class="image" alt="Mitsubishi">
+                        </span>
+                        <span class="brand_name">Mitsubishi</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_mazda.webp" class="image" alt="Mazda">
+                        </span>
+                        <span class="brand_name">Mazda</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_ford.webp" class="image" alt="Ford">
+                        </span>
+                        <span class="brand_name">Ford</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_honda.webp" class="image" alt="Honda">
+                        </span>
+                        <span class="brand_name">Honda</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_suzuki.webp" class="image" alt="Suzuki">
+                        </span>
+                        <span class="brand_name">Suzuki</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_mercedes.webp" class="image" alt="Mercedes-Benz">
+                        </span>
+                        <span class="brand_name">Mercedes</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_bmw.webp" class="image" alt="BMW">
+                        </span>
+                        <span class="brand_name">BMW</span>
+                    </a>
+                </div>
+                            <div class="column is-2">
+                    <a href="#" class="brand-item">
+                        <span class="brand_logo">
+                            <img src="img2/logo_audi.webp" class="image" alt="Audi">
+                        </span>
+                        <span class="brand_name">Audi</span>
+                    </a>
+                </div>
+                    </div>
+                    <div class="section_footer mt-2">
+                        <a href="#" class="btn_view_more has_down_arrow btn_view_more_brand">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer_section">
+        <div class="container">
+            <div class="logo-footer"></div>
+            <div class="footer_content_wrapper">
+                <div class="footer_content">
+                    <div>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473
+                    </div>
+                    <div class="mt-5">Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM</div>
+                    <div class="footer_contact mt-5">
+                        <a href="#" class="phone">091.144.2883</a>
+                        <a href="#" class="email">cskh@choxe.vn</a>
+                    </div>
+                    <div class="footer_logo">
+                        <img src="img2/logo_dadangky.png" class="image">
+                    </div>
+                </div>
+                <div class="footer_link">
+                    <a href="#" style="font-weight: bold;">GIỚI THIỆU</a>
+                    <a href="#" class="footer_link_text">QUY CHẾ HOẠT ĐỘNG</a>
+                    <a href="#" class="footer_link_text">BÁO GIÁ</a>
+                </div>
+                <div>
+                    <a href="#" class="button btn_hotline">Hotline: 091.144.2883</a> 
+                    <a href="#" class="button btn_agent mt-4">Dành cho Salon, Môi giới</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<div style="position: absolute; top: 0px; display: block !important;"></div>
+</html>

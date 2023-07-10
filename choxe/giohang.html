@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">   <!--first header-->
+            <div class="sub-header">   <!--dong trong header-->
+                <div>
+                    <a href="index.html"> <!--ChoXe-->
+                        <img src="img2/logo_choxe.png" alt="Chợ Xe">
+                    </a>   <!--Car Audit-->
+                    <a href="#">
+                        <i class="icon-car"> </i> <!--icon-->
+                        Car Audit
+                    </a>
+                    <a href="#">    <!--Thu tuc mua ban-->
+                        <i class="icon-support"></i>
+                        Thủ tục mua bán 
+                    </a>
+                    <a href="#  "> <!--Tin tuc-->
+                        <i class="icon-news"></i>
+                        Tin tức 
+                    </a>
+                </div> 
+            </div>
+            <div class="second-header">   <!--second header-->
+                <div class="input_search_wrapper">   
+                    <form id="header_search_form" action="#" method="get" class="form_search">
+                        <div class="control has-icons-left has-icons-right is-clickable" style="width: 865px;">
+                            <input type="text" name="keyword" placeholder="Tìm kiếm trong chợ xe" class="input input_keyword is-small">
+                            <span class="icon is-left">
+                                <i class="icon-search"></i>
+                            </span>
+                            <a href="#" data-toggle="modal" data-target="#modalSearchForm" class="icon is-right is-text">
+                                <i class="icon-preferences"></i>    
+                            </a>
+                        </div>
+                    </form>
+                    <div class="recent_search_wrapper is-hidden">
+                        <div id="empty_history" class="is-hidden">Không có tìm kiếm nào gần đây</div>
+                        <div>
+                            <div class="recent_search_title">Tìm kiếm gần đây</div>
+                            <a id="btn_clear_history" href="#" class="has-text-primary">Xóa Tất Cả</a>
+                            <div class="list_keywords mt-2">
+                                <div class="keyword_item">
+                                    <a href="#" class="keyword">xe 4 chỗ</a>
+                                    <a href="#" class="remove">
+                                        <i class="icon-remove"></i>
+                                    </a>
+                                </div>
+                                <div class="keyword_item">
+                                    <a href="#" class="keyword">ford</a>
+                                    <a href="#" class="remove">
+                                        <i class="icon-remove"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="dangnhap.html" class="avatar_wrapper">  
+                    <img src="img2/dangnhap.png" class="image">
+                    Đăng nhập
+                </a>
+                <a href="dangky.html" class="avatar_wrapper">Đăng ký</a>
+            </div>
+        </div>
+    </nav>
+    <section class="pb-0">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <h2>Từ khóa tìm kiếm nhiều nhất</h2>
+                    <div class="popular_keyword">
+                        <a href="#" class="tag">Hyundai Accent</a>
+                        <a href="#" class="tag">Mazda CX-5</a>
+                        <a href="#" class="tag">Xe 7 chỗ dưới 1 tỷ</a>
+                        <a href="#" class="tag">Ford Explorer 2022</a>
+                        <a href="#" class="tag">Bán tải cũ giá rẻ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="cartempty">
+            <i class="cartnew-empty"></i>
+            <span>Không có sản phẩm nào trong giỏ hàng</span>
+            <a href="index.html" class="backhome">Về trang chủ</a>
+            <p>Khi cần trợ giúp vui lòng gọi 
+                <a style="color: #F05626" href="#">091.144.2883</a>
+            </p>
+        </div>
+    </section>
+    
+    <section class="footer_section">
+        <div class="container">
+            <div class="logo-footer"></div>
+            <div class="footer_content_wrapper">
+                <div class="footer_content">
+                    <div>©2022 by ChoXe.net. All rights reserved. Công Ty Cổ Phần Ô Tô Xuyên Việt; Mã số thuế: 0304013473
+                    </div>
+                    <div class="mt-5">Lầu 1, B5-B6 Khu Kim Sơn - Đường Nguyễn Hữu Thọ, phường Tân Phong, Quận 7, TPHCM</div>
+                    <div class="footer_contact mt-5">
+                        <a href="#" class="phone">091.144.2883</a>
+                        <a href="#" class="email">cskh@choxe.vn</a>
+                    </div>
+                    <div class="footer_logo">
+                        <img src="img2/logo_dadangky.png" class="image">
+                    </div>
+                </div>
+                <div class="footer_link">
+                    <a href="#" style="font-weight: bold;">GIỚI THIỆU</a>
+                    <a href="#" class="footer_link_text">QUY CHẾ HOẠT ĐỘNG</a>
+                    <a href="#" class="footer_link_text">BÁO GIÁ</a>
+                </div>
+                <div>
+                    <a href="#" class="button btn_hotline">Hotline: 091.144.2883</a> 
+                    <a href="#" class="button btn_agent mt-4">Dành cho Salon, Môi giới</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
